@@ -371,16 +371,16 @@ library(base)</code></pre>
 </div>
 <div id="data-processing" class="section level5">
 <h5>Data Processing</h5>
-<pre class="r"><code>grid &lt;- read_sf(&quot;C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/vector-grid/vector_grid.shp&quot;)
+<pre class="r"><code>grid &lt;- read_sf(&quot;D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/vector-grid/vector_grid.shp&quot;)
 grid1 &lt;- grid %&gt;% select(ID)
 
-pop &lt;- read_csv(&quot;C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/GridWardLANation.csv&quot;)
+pop &lt;- read_csv(&quot;D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/GridWardLANation.csv&quot;)
 pop1 &lt;- pop %&gt;% select(grid_ID,Lacode,total_population_1971,total_population_1981,total_population_1991,total_population_2001,total_population_2011)
 
-cities &lt;- read_sf(&quot;C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/Assignment 1/casa0001_01/greater-manchester-latest-free/gis_osm_places_free_1.shp&quot;)
+cities &lt;- read_sf(&quot;D:/UCL_CODE/CASA0001/data/greater-manchester-latest-free/gis_osm_places_free_1.shp&quot;)
 cities1 &lt;- filter(cities,fclass==&#39;city&#39;|fclass==&#39;town&#39;,population&gt;0)
 
-authorities &lt;- read_sf(&quot;C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/local_authorities/district_borough_unitary_region.shp&quot;)
+authorities &lt;- read_sf(&quot;D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/local_authorities/district_borough_unitary_region.shp&quot;)
 auth_table &lt;- data.frame(authorities)
 auth1 &lt;- auth_table %&gt;% select(CODE,NAME,FILE_NAME)
 

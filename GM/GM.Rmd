@@ -22,16 +22,16 @@ library(base)
 ##### Data Processing
 
 ```{r message=FALSE, warning=FALSE}
-grid <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/vector-grid/vector_grid.shp")
+grid <- read_sf("D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/vector-grid/vector_grid.shp")
 grid1 <- grid %>% select(ID)
 
-pop <- read_csv("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/GridWardLANation.csv")
+pop <- read_csv("D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/GridWardLANation.csv")
 pop1 <- pop %>% select(grid_ID,Lacode,total_population_1971,total_population_1981,total_population_1991,total_population_2001,total_population_2011)
 
-cities <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/Assignment 1/casa0001_01/greater-manchester-latest-free/gis_osm_places_free_1.shp")
+cities <- read_sf("D:/UCL_CODE/CASA0001/data/greater-manchester-latest-free/gis_osm_places_free_1.shp")
 cities1 <- filter(cities,fclass=='city'|fclass=='town',population>0)
 
-authorities <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/local_authorities/district_borough_unitary_region.shp")
+authorities <- read_sf("D:/UCL_CODE/CASA0001/data/PopChange population grids for Britain, 1971-2011/rootfiles/local_authorities/district_borough_unitary_region.shp")
 auth_table <- data.frame(authorities)
 auth1 <- auth_table %>% select(CODE,NAME,FILE_NAME)
 

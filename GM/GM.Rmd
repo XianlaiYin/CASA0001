@@ -1,0 +1,160 @@
+---
+title: 'GM_Population_Analysis'
+output: html_document
+date: "2022-11-03"
+name: "XianlaiYIN"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##### Library
+
+```{r message=FALSE, warning=FALSE}
+library(tmap)
+library(tmaptools)
+library(tidyverse)
+library(sf)
+library(base)
+```
+
+##### Data Processing
+
+```{r message=FALSE, warning=FALSE}
+grid <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/vector-grid/vector_grid.shp")
+grid1 <- grid %>% select(ID)
+
+pop <- read_csv("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/GridWardLANation.csv")
+pop1 <- pop %>% select(grid_ID,Lacode,total_population_1971,total_population_1981,total_population_1991,total_population_2001,total_population_2011)
+
+cities <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/Assignment 1/casa0001_01/greater-manchester-latest-free/gis_osm_places_free_1.shp")
+cities1 <- filter(cities,fclass=='city'|fclass=='town',population>0)
+
+authorities <- read_sf("C:/Users/xianl/iCloudDrive/UCL_FILES/CASA0001/PopChange population grids for Britain, 1971-2011/rootfiles/local_authorities/district_borough_unitary_region.shp")
+auth_table <- data.frame(authorities)
+auth1 <- auth_table %>% select(CODE,NAME,FILE_NAME)
+
+GM1 <- merge(grid1,
+              pop1,
+              by.x="ID",
+              by.y="grid_ID")
+
+GM2 <- merge(GM1,
+              auth1,
+              by.x="Lacode",
+              by.y="CODE")
+
+GM3 <- filter(GM2,Lacode=='E08000001'|Lacode=='E08000002'|Lacode=='E08000003'|Lacode=='E08000004'|Lacode=='E08000005'|Lacode=='E08000006'|Lacode=='E08000007'|Lacode=='E08000008'|Lacode=='E08000009'|Lacode=='E08000010')
+
+GM3$Change_71_81 <- GM3$total_population_1981-GM3$total_population_1971
+GM3$Change_81_91 <- GM3$total_population_1991-GM3$total_population_1981
+GM3$Change_91_01 <- GM3$total_population_2001-GM3$total_population_1991
+GM3$Change_01_11 <- GM3$total_population_2011-GM3$total_population_2001
+
+GM3$Change_Rate_71_81 <- GM3$Change_71_81/GM3$total_population_1971
+GM3$Change_Rate_81_91 <- GM3$Change_81_91/GM3$total_population_1981
+GM3$Change_Rate_91_01 <- GM3$Change_91_01/GM3$total_population_1991
+GM3$Change_Rate_01_11 <- GM3$Change_01_11/GM3$total_population_2001
+
+GM3[is.na(GM3)] <- 0
+
+GM4 <- group_by(GM3, Lacode) %>%
+  summarise()
+
+GM4 <- merge(GM4,
+              auth1,
+              by.x="Lacode",
+              by.y="CODE")
+
+GM4$Cities <- gsub("\\ .*", "", GM4$NAME)
+```
+
+##### Population
+
+```{r}
+tm_shape(GM3) +
+  tm_fill("total_population_1971",title="population_1971",breaks=c(0,2000,4000,6000,8000,10000,12000,14000,16000),palette="Oranges") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("total_population_1981",title="population_1981",breaks=c(0,2000,4000,6000,8000,10000,12000,14000,16000),palette="Oranges") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("total_population_1991",title="population_1991",breaks=c(0,2000,4000,6000,8000,10000,12000,14000,16000),palette="Oranges") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("total_population_2001",title="population_2001",breaks=c(0,2000,4000,6000,8000,10000,12000,14000,16000),palette="Oranges") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("total_population_2011",title="population_2011",breaks=c(0,2000,4000,6000,8000,10000,12000,14000,16000),palette="Oranges") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+```
+
+##### Population Change
+
+```{r}
+tm_shape(GM3) +
+  tm_fill("Change_71_81",title="Change_71_81",breaks=c(-8000,-6000,-4000,-2000,0,2000,4000,6000,8000),palette="-BrBG") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("Change_81_91",title="Change_81_91",breaks=c(-8000,-6000,-4000,-2000,0,2000,4000,6000,8000),palette="-BrBG") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("Change_91_01",title="Change_91_01",breaks=c(-8000,-6000,-4000,-2000,0,2000,4000,6000,8000),palette="-BrBG") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+
+tm_shape(GM3) +
+  tm_fill("Change_01_11",title="Change_01_11",breaks=c(-8000,-6000,-4000,-2000,0,2000,4000,6000,8000),palette="-BrBG") +
+  tm_borders() +
+  tm_layout(title.position = c("left","bottom"))
+```
+
+##### Population Change Rate
+
+```{r}
+tm_shape(GM3) +
+  tm_fill("Change_Rate_71_81",title="Rate_71_81",breaks=c(-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1,2),midpoint = 0,palette="-RdBu")  +
+  tm_borders(col='Grey', lwd=0.5) +
+tm_shape(GM4) +
+  tm_borders(lwd=1.5) +
+  tm_text(text="Cities",col="black",size=0.8) +
+tm_layout(legend.title.size = 1)
+
+tm_shape(GM3) +
+  tm_fill("Change_Rate_81_91",title="Rate_81_91",breaks=c(-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1,2),midpoint = 0,palette="-RdBu")  +
+  tm_borders(col='Grey', lwd=0.5) +
+tm_shape(GM4) +
+  tm_borders(lwd=1.5) +
+  tm_text(text="Cities",col="black",size=0.8) +
+tm_layout(legend.title.size = 1)
+
+tm_shape(GM3) +
+  tm_fill("Change_Rate_91_01",title="Rate_91_01",breaks=c(-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1,2),midpoint = 0,palette="-RdBu")  +
+  tm_borders(col='Grey', lwd=0.5) +
+tm_shape(GM4) +
+  tm_borders(lwd=1.5) +
+  tm_text(text="Cities",col="black",size=0.8) +
+tm_layout(legend.title.size = 1)
+
+tm_shape(GM3) +
+  tm_fill("Change_Rate_01_11",title="Rate_01_11",breaks=c(-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1,2),midpoint = 0,palette="-RdBu")  +
+  tm_borders(col='Grey', lwd=0.5) +
+tm_shape(GM4) +
+  tm_borders(lwd=1.5) +
+  tm_text(text="Cities",col="black",size=0.8) +
+tm_layout(legend.title.size = 1)
+```

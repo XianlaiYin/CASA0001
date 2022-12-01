@@ -1,0 +1,84 @@
+##### Task
+```
+## Pick one of the cities – not London – listed in the Centre for Cities City-By-City 
+list - https://www.centreforcities.org/city-by-city/
+
+## Answer both parts of just ONE of the questions below (1, 2 or 3); either:
+1) a) Imagine you are tasked with ascertaining whether the Standard Urban Model applies to this city. How would you go about this? What data and information would you collect, and how would you use them? b) To what extent do you think the model applies to your city? Do you see any limitations to the model? Explain your answer.
+2) Pick two contrasting neighbourhoods within your city and a) Compare and describe the socio spatial character of the two neighbourhoods and analyse how social and spatial factors are interrelated. b) In which ways do you think the socio-spatial dialectic can help in understanding the two neighbourhoods’ very different social outcomes?
+3) Conceptualise, describe and explain the development of your city based on the model of differential urbanisation. b) Do you think the model captures and plausibly explains its development? Why so/why not?
+
+## Resources
+1) Other contextual data: maps.cdrc.ac.uk/ | www.commute.datashine.org.uk/ | www.datashine.org.uk/ | www.scotland.datashine.org.uk | www.carbon.place | www.openstreetmap.org
+2) England-wide data: www.centreforcities.org/data-tool
+
+## Word limit
+The length of the proposal should not exceed 1000 words excluding title and references. Penalties for over-length apply in accordance with UCL regulations.
+
+## Deadline
+Monday, 7th November 2022, 12pm. Please submit on Moodle > Course work. Late submission will be subject to the standard penalties, according to UCL regulations.
+
+## Further instructions
+1) Please use the Word template provided or use Latex with default settings for 'article'.
+2) Please add a word count at the top of your document.
+```
+
+##### Topic Choose
+```
+[City] Manchester
+[Theme] Conceptualise, describe and explain the development of your city based on the model of differential urbanisation. b) Do you think the model captures and plausibly explains its development? Why so/why not?
+```
+
+##### Resourses
+```
+```
+
+##### Content
+```
+# Introduction
+
+差异式城市化模型通过人口迁移模式判断区域的城市化进程，其以大城市、中等城市与小城市人口净增长率的时间序列为特征将城市化进程划分为可循环的两个周期六个阶段。(引用)Manchester作为世界上最早的工业化城市之一，是一个城市化进程开始时间早、经历城市化阶段相对完整的城市。基于差异式城市化模型对Manchester及其相关区域进行分析，即可以更加有效地分析与验证模型的准确性，也可以清晰和理顺Manchester的城市化发展进程。
+
+
+# Research Area Defination
+
+目前，Manchester一般指包括Manchester、Salford、Trafford等metropolitan boroughs在内的大曼彻斯特城市连绵区，相关的定义有Greater Manchester、Manchester City Region、 Greater Manchester Built-up Area等，每个定义的边界略有差别。为了统计口径的统一与研究的便利，将Greater Manchester定义为本文的研究对象，其是North West England的一个metropolitan county and combined authority area，2021年人口为280万，是英国人口第二多的城市地区，是英格兰北部区域的PRIMATE CITY之一。
+
+
+# Research Data
+
+1. 1801年-2021年的Greater Manchester的人口数据分析，用以分析Greater Manchester长期人口变化趋势。缺失1871、1901和1941的精确数据，采用均值插值法补齐。来自基于Census的A Vision of Britain through Time（引用）。
+2. 1901年-1991年的基于差异式城市化的工业核心区（以Manchester等为PRIMATE CITY的英格兰北部工业化区域）净人口增长率数据，用以辅助该时间段的差异式城市化阶段划分。将10年增长率换算为平均年增长率以弥补1941年数据缺失导致的统计口径不一致，并绘制其polynomial trendline以辅助分析。数据来源于TONY CHAMPION的研究（引用）。
+3. 1971年-2011年的1km x 1km网格人口数据，用以分析近期Greater Manchester内部的人口变化。数据来源于Lloyd, Christopher等的研究（引用）。
+
+
+# The urbanisation of Greater Manchester and Related Areas
+
+## 第一阶段：EARLY PRIMATE CITY STAGE（1700s-1800s）
+直到18世纪初，Manchester只是一个规模万人左右的集镇，主要以纺织业为主（引用）。18世纪中叶以后，得益于便捷的铁路与水运交通条件、距原料产地近且有着一定的纺织产业基础，Manchester在工业革命和现代化大生产方式的带动下迅速扩张，逐渐成为当时的纺织制造中心之一（引用）。不断建立的工厂产生的大量的就业机会吸引着周边大批人口涌入，Manchester城市化进程被快速推动。在这一阶段，Manchester作为PRIMATE CITY开始吸引周边INTERMEDIATE SIZED CITY和small city的人口，是EARLY PRIMATE CITY STAGE。
+
+## 第二阶段：INTERMEDIATE PRIMATE CITY STAGE（1800s-1850s）
+在19世纪交际前后开始，随着工业革命的不断推进及瓦特蒸汽机在Manchester地区棉纺厂的广泛应用，促进了相关产业如漂白工程、纺织印花、机械制造等产业的发展，Manchester迅速成为重要的工业城市（引用），人们从各地向Manchester涌入。同时，得益于工业革命带来的交通的进步，Manchester周边的一些铁路或运河沿线的INTERMEDIATE SIZED CITY如Stockport、Bolton、Rochdale随着Manchester的崛起而开始发展（引用），建设了一些设施并吸引部分人口流入。在这一阶段，Manchester的城市化进入最快速的阶段，净人口增长率在此期间向历史最高值接近，同时周边的INTERMEDIATE SIZED CITY的净人口增长率由负转正，但small city的人口进一步流出，是INTERMEDIATE PRIMATE CITY STAGE。
+
+## 第三阶段：ADVANCED PRIMATE CITY STAGE（1850s-1900s）
+从19世纪中后期开始，Manchester在工业化的同时也导致城市环境不断恶化，加之田园城市等思想的广泛影响，城市的中产阶级开始意识到城市生活环境的变化，开始向各个郊区和small city移居（引用）。同时，Manchester的棉纺厂数量在1850年代年达到顶峰，之后陆续被其周边的Bolton、Oldham等INTERMEDIATE SIZED CITY超越。在这一阶段，Manchester的净人口增长率的上升趋势到达顶峰而逐渐下降，而INTERMEDIATE SIZED CITY的净人口增长率不断上升，同时Manchester周边的small city得益于优美的环境有了陆续发展，人口流出的趋势得以缓解，是ADVANCED PRIMATE CITY STAGE。
+
+## 第四阶段：EARLY INTERMEDIATE CITY STAGE（1900s-1950s）
+1900年前后，英国城市化率到达70%-80%，城市化进程逐渐放缓。第一次世界大战后，英国工业结构的开始转型变化（引用），Manchester地区的纺织业等旧产业受到负面影响。而后，Great Depression和第二次世界大战让Manchester的工业产业和基础设施受到巨大打击。多种因素的叠加造成了Manchester的净人口增长率大幅下降。同时，汽车的普及和卫星城理论的提出和实践，推动了Manchester周边Wythenshawe为代表的以城郊居住为主要功能的城镇建设（引用），为small city带来了人口流入。此阶段INTERMEDIATE SIZED CITY的净人口增长率为三类城市中的最高值，PRIMATE CITY的净人口增长率持续走低，small city的净人口增长率迅速增高，整体上呈现极化逆转阶段的特征。因此，可以将该阶段整体划为差异式城市化的第四阶段，是EARLY INTERMEDIATE CITY STAGE。
+
+## 第五阶段：ADVANCED INTERMEDIATE CITY STAGE（1950s-1960s)
+第二次世界大战后，为解决城市地区过剩的人口的住房问题，开始于大城市郊区建设Overspill estates，Manchester城郊的Hattersley、Gamesley于这时被建立（引用）。Manchester的净人口增长率在此时趋近于0，区域内的small city的净人口增长率在1950年前后超越PRIMATE CITY，跨过了第四至第五阶段的Clean Break，进入了ADVANCED INTERMEDIATE CITY STAGE。
+
+## 第六阶段：SMALL CITY STAGE（1960s-2000s)
+1960年代以来，Manchester的纺织产业和航运产业相继陷入困境，城市经济低迷导致就业岗位减少，其中心城区由于过早的城市化而受限于19世纪的空间结构，充斥着工业区和老旧住房（引用）。因此，Manchester的人口在这段时间大量流出，进入COUNTERURBANISATION STAGE，是所有英国城市中移民流失率最高的城市之一。同时，英国政府大力推动新城建设，Manchester周边的Warrington等新城的建设（引用），不仅进一步加剧了其人口流出，也代表着SMALL CITY这个阶段占据城市化的主导地位，进入了SMALL CITY STAGE。
+
+## 下一个循环（2000s-）
+1990年代之后，在经历了长期的衰退后，Manchester开始实施property-led的城市复兴战略，力图改变城市形象，推动产业转型。这些措施卓有成效，Manchester的中心城区经历了广泛的重建，主导产业也由工业转为服务业，吸引了诸多人口流入（引用）。在2000年代之后，Manchester的人口重新变为正增长，并再次向中心城区集中（图3），进入到了城市发展的下一个cycle。
+
+
+# Model Matching Analysis and Conclusion
+综上所述，差异式城市化模型能够在Manchester及其周边地区得到较好的验证，每一个阶段都有较为明晰的划分节点，并且符合地区的城市化发展规律。当然，在部分特殊时间节点如战争和经济衰退时，Manchester及其周边地区的城市化曲线并不能完美适配模型曲线，但是这并不影响模型的整体解释性。对于Manchester及其周边地区来说，其在1700s开始的城市发展进程，可以以1800s、1850s、1900s、1950s、1960s、2000s为节点划分为两个周期六个阶段，而2000s到今天或未来，Manchester的城市发展又开始了一个新的cycle。
+```
+
+2. Demographic data analysis for Greater Manchester, 1801 - 2021, used to analyse long-term population trends in Greater Manchester. Exact data for 1871, 1901 and 1941 are missing and were interpolated using mean values. (citation needed) (Figure 1)
+3. 1. PopChange Population Grids for Britain, 1971-2011, to analyse recent population change within Greater Manchester. (citation needed)

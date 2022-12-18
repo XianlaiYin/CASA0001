@@ -49,7 +49,11 @@ The study began by collecting a large amount of data, including census and house
 
 本研究中的士绅化涉及到社会空间的分化，包括沿着经济轴的住宅分化和沿着文化轴的居住分化，本研究利用地理人口统计的现代化技术，对区域人口和地理数据进行模拟，判断社会过程对空间过程的影响。此外，作者也在时间序列上进行横断面研究（尽管只有两个年份），在空间上进行了领域效应的分析，以判断空间过程对社会过程的影响。而分离研究可以进一步分析伦敦士绅化的社会空间划分模式，更深入地了解士绅化背后的深层次原因，但很可惜其并没有很清晰地体现在文章中。
 
+The strengths of this study are mainly in the use of reliable social and spatial data and a variety of quantitative analysis methods to accurately quantify and classify the complex gentrification in London, as well as to forecast its future trends, which nicely fills the gap in the field of gentrification research mentioned earlier. At the same time, the excellent interactive visualisation methods and clear analytical interpretation provide a reliable basis for decision making by planning agencies. In addition, this paper and the code provided by the authors provide a replicable research methodology for scholars studying similar topics.
 
+However, there are certain limitations to this paper. Firstly, the causes behind gentrification are complex, and while this paper quantifies more social factors than previous studies, the impact of many episodic events (such as epidemics or wars) and superordinate planning (such as planning for critical infrastructure) is difficult to quantify and assess, and this also introduces significant interference in predictions. At the same time, gentrification has been a stable trend in post-industrial cities, but nowadays information technology is impacting on the social structure of cities, and the influence of spatial distance is being diluted by the widespread availability of the Internet. Perhaps in the near future, when cities enter a phase dominated by information technology, the original characteristics of land price distribution in cities will be reconstructed, and the ten-year forecasts based on this paper's model may be less accurate than expected. In addition, this paper only analyses data from 2001-2011 in London. On the one hand, it may be more generalisable to base the analysis on data from several different cities or regions; on the other hand, analysing and forecasting data from multiple years allows for better adjustment of the model, for example, using data from 1991-2001 to forecast data for 2011 and using reference to the actual 2011 year data to make adjustments. Of course, some of these limitations are perhaps too stringent, with a high degree of difficulty in collecting data and harmonising statistical calibres over multiple years, and the element of chance in forecasting is difficult to avoid.
+
+The gentrification in this study involves socio-spatial differentiation, including residential differentiation along the economic axis and residential differentiation along the cultural axis, and this study uses modern techniques of geo-demography to simulate regional demographic and geographical data to determine the impact of social processes on spatial processes. In addition, the authors have also conducted cross-sectional studies on time series (albeit for only two years) and spatial analysis of domain effects to determine the impact of spatial processes on social processes. And while the separation study could have further analysed the socio-spatial division patterns of gentrification in London and provided more insight into the deeper reasons behind gentrification, unfortunately its not very clear in the article.
 ```
 
 ###### *Do you think the authors achieve their research objective? What additional work may be done to contribute to the research field of this study? 你认为作者达到了他们的研究目的吗?为了对本研究的研究领域做出贡献，还需要做哪些额外的工作?*
@@ -59,7 +63,7 @@ The study began by collecting a large amount of data, including census and house
 `tips: 实现了绘制不平等地图的目标；公共住房供应和健康差距之间的相关性，在考虑其他地区特征后，扭转影响的方向；未来工作：附加变量?混杂变量和/或控制变量?；纵向研究，公共住房前后?；补充定性分析，以提供所选社区的更多细节；城市政策分析，以研究集中卫生脆弱性的产生。（后续分析定量部分）使用定量结果来决定要访问的社区:三个死亡率不同但城市密度相似的社区，围绕城市密度、日常活动、健康和福祉邀请当地居民参与的焦点小组；（后续分析定性部分）揭示社会实践、社会经济环境的重要性。即城市密度影响个人健康和福祉的偶然机制。`
 
 ```
-
+本文
 ```
 
 ###### *To support your arguments, you should cite relevant literature. 为了支持你的观点，你应该引用参考文献。*

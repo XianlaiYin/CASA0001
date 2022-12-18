@@ -11,9 +11,9 @@
 `tips: 主要实证主义-使用演绎推理来推断普遍规律；寻求建立客观的证据基础；强调定量分析方法和辅助数据；使用贝叶斯空间结构模型了解密度和公共住房如何影响过早死亡率；假设我们可以解释、预测和改变世界。`
 
 ```
-作者的认识论取向基本符合实证主义范式在城市分析中的典型特征，并在研究中多个方面有所体现。首先，本文对伦敦的士绅化进程进行了测度与分类，并对其未来趋势进行预测，这与实证主义范式中使用演绎推理来推断普遍规律并认为世界是可以被解释、预测和改变的特征一致。其次，本研究使用主成分分析、聚类分析和机器学习等方法客观地对伦敦的士绅化进程进行定量分析，与实证主义范式强调定量分析方法的特征相吻合。此外，研究是基于大量且多种的具有可靠数据源的数据集，对；伦敦的士绅化过程和模式进行量化研究，这与实证主义范式中寻求建立客观的证据基础的特征相吻合。不过，文章中或许也有一些其他认识论如结构主义的影响，在文章的实证分析部分，作者通过士绅化这一城市现象，追溯和推理空间现象背后更深层次的的经济和社会本质。
+作者的认识论取向基本符合实证主义范式在城市分析中的典型特征，并在研究中多个方面有所体现。首先，本文对伦敦的士绅化进程进行了测度与分类，并对其未来趋势进行预测，这与实证主义范式中使用演绎推理来推断普遍规律并认为世界是可以被解释、预测和改变的特征一致。其次，本研究使用主成分分析、聚类分析和机器学习等方法客观地对伦敦的士绅化进程进行定量分析，与实证主义范式强调定量分析方法的特征相吻合。此外，研究是基于大量且多种的具有可靠数据源的数据集，这与实证主义范式中寻求建立客观的证据基础的特征相吻合。不过，文章中或许也有一些其他认识论如结构主义的影响，在文章的讨论和结论部分，作者通过士绅化这一城市现象，追溯和推理空间现象背后更深层次的的经济和社会本质。
 
-The author's epistemological orientation is largely in line with the positivist paradigm typical of urban analysis, and is reflected in several aspects of the study. Firstly, the paper measures and classifies the process of gentrification in London and predicts its future trends, which is consistent with the positivist paradigm's use of deductive reasoning to infer universal laws and to argue that the world is open to interpretation, prediction and change. Secondly, the study uses principal component analysis, cluster analysis and machine learning to objectively quantify the process of gentrification in London, in line with the positivist paradigm's emphasis on quantitative methods of analysis. Furthermore, the research is based on a large and diverse dataset with reliable data sources to quantify; the processes and patterns of gentrification in London, which is in line with the positivist paradigm's characteristic of seeking to establish an objective evidence base. However, there may be some other epistemological influences such as structuralism in the article, and in the empirical analysis section of the article, the authors trace and reason about the deeper economic and social essence behind the spatial phenomenon of gentrification as an urban phenomenon.
+The author's epistemological orientation is largely in line with the positivist paradigm typical of urban analysis, and is reflected in several aspects of the study. Firstly, the paper measures and classifies the process of gentrification in London and predicts its future trends, which is consistent with the positivist paradigm's use of deductive reasoning to infer universal laws and to argue that the world is open to interpretation, prediction and change. Secondly, the study uses principal component analysis, cluster analysis and machine learning to objectively quantify the gentrification process in London, in line with the positivist paradigm's emphasis on quantitative methods of analysis. Furthermore, the study is based on a large and diverse dataset with reliable data sources, which is in keeping with the positivist paradigm's characteristic of seeking to establish an objective evidence base. However, there may be some influence from other epistemologies such as structuralism, and in the discussion and conclusion of the article, the authors trace and reason about the deeper economic and social nature behind the spatial phenomenon of gentrification as an urban phenomenon.
 ```
 
 ###### *How do the authors attempt to study neighbourhoods and their characteristics in their study? 作者如何尝试在他们的研究中研究社区及社区的特点?*
@@ -63,7 +63,11 @@ The gentrification in this study involves socio-spatial differentiation, includi
 `tips: 实现了绘制不平等地图的目标；公共住房供应和健康差距之间的相关性，在考虑其他地区特征后，扭转影响的方向；未来工作：附加变量?混杂变量和/或控制变量?；纵向研究，公共住房前后?；补充定性分析，以提供所选社区的更多细节；城市政策分析，以研究集中卫生脆弱性的产生。（后续分析定量部分）使用定量结果来决定要访问的社区:三个死亡率不同但城市密度相似的社区，围绕城市密度、日常活动、健康和福祉邀请当地居民参与的焦点小组；（后续分析定性部分）揭示社会实践、社会经济环境的重要性。即城市密度影响个人健康和福祉的偶然机制。`
 
 ```
-本文
+首先，文章详细地对伦敦各社区2001-2011年的士绅化相关因素进行了量化分析，并精准地找到了真正经历士绅化的社区并划分了他们士绅化的类别，在此基础上对2021年的士绅化区域进行了预测，同时，本文的分析过程也被作为可复制的方法被分享，研究结果也被交互式的地理数据可视化方法进行清晰呈现。此外，后续的其他研究也在陆续证明本文的有效性。因此可以认为，本文的既定研究目标都被很好地完成了。
+
+为了进一步对相关研究领域做出贡献，未来的工作可以从以下几个方面展开。第一，前文所提到的一些问题可以进行进一步完善，随着数据源的增加和收集方法的多样化，可以收集多年期数据进行更长期的分析研究，同时，也可以对包括伦敦在内的不同地区各有特征的城市同步进行研究，这二者可以是研究更具有普适性和可重复性，创造出一套普遍可行的士绅化分析方法。第二，将政策、规划等人为干预因素作为分析数据加入到研究中，一方面可以提高预测的准确性，另一方面也可以判断不同政策对士绅化的影响，辅助相关机构制定政策。此外，对于士绅化的研究的来源及目的还是提高城市中人的生活环境质量，人的感知和观点也应该是研究中的重要一环，通过问卷或访谈等方式将人的想法引入，并与数据分析进行对比研究或许可以提高研究最终的可落地性。
+
+
 ```
 
 ###### *To support your arguments, you should cite relevant literature. 为了支持你的观点，你应该引用参考文献。*

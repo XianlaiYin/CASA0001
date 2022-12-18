@@ -1,6 +1,6 @@
 ##### *CASA0001 Assignment 2*
 
-*Xianlai Yin 18/12/2022 选题：A* 
+*Xianlai Yin 18/12/2022 选题：A*
 
 ---
 
@@ -27,7 +27,7 @@ The author's epistemological orientation is largely in line with the positivist 
 
 而以往对士绅化的研究，一方面，由于士绅化所涉及的社会空间的复杂性和缺乏证据或手段收集、处理和分析数据(Almeida's, 2021)，很难对士绅化进行定量分析，因此无法精准地进行研究，也缺乏可复制性。另一方面，此前的士绅化研究大多只是基于人口变化的整体趋势，并没有精准地划分趋势以找到真正意义上的士绅化现象。同时，对于士绅化的预测对政策的制定有着重要的指导意义，而此前的研究受限于技术方法很难对趋势进行判断。如今，随着技术发展和数据量的爆发性增长，本文得以利用更先进的技术方法弥补这些方面的空缺。
 
-本研究首先收集了大量数据，包括ONS提供的人口普查与房价相关数据，GLA提供的建成环境相关数据，和CDRC提供的人口波动数据，并以最为接近社区规模和划分的人口普查的Lower-Layer Super Output Areas (LSOA)作为分析单元。研究分为了具体的四个阶段：第一阶段，通过主成分分析识别每一个LSOA的历史变化；第二阶段，通过K-means聚类识别呈增长趋势的LSOA是否为士绅化社区；第三阶段，通过再一次的K-means聚类识别士绅化的LSOA的类型（super gentrification, marginal gentrification, mainstream  gentrification），并通过Global Moran's I和Getis-Ord Gi判断士绅化的空间自相关程度；第四阶段，通过基于多元随机森林模型的机器学习预测伦敦各LSOA的未来发展趋势。构建了完整的研究内容。
+本研究首先收集了大量数据，包括ONS提供的人口普查与房价相关数据，GLA提供的建成环境相关数据，和CDRC提供的人口波动数据，并以最为接近社区规模和划分的人口普查的Lower-Layer Super Output Areas (LSOA)作为分析单元。研究分为了具体的四个阶段：第一阶段，通过主成分分析识别每一个LSOA的历史变化；第二阶段，通过K-means聚类识别呈增长趋势的LSOA是否为士绅化社区；第三阶段，通过再一次的K-means聚类识别士绅化的LSOA的类型（super gentrification, marginal gentrification, mainstream  gentrification），并通过Global Moran's I和Getis-Ord Gi判断士绅化的空间自相关程度；第四阶段，通过基于多元随机森林模型的机器学习预测伦敦各LSOA的未来发展趋势。此外，本文使用了交互式的空间数据可视化方法，使判断空间模式和趋势更加便利。
 
 In general, this paper uses multiple datasets to quantify the process of gentrification based on a systematic study of neighbourhood change in London, extracting features and spatial patterns of gentrification through multiple downscaling and classification of the data, and then using machine learning methods to predict gentrification trends. The context of the article is that gentrification, a complex socio-spatial phenomenon occurring in post-industrial cities such as London, is often a concrete manifestation of broader social divisions related to race, class, etc. (Perera, 2019; Snoussi & Mompelat, 2019) and poses a challenge for urban policy making.
 
@@ -43,6 +43,12 @@ The study began by collecting a large amount of data, including census and house
 `tips: 优势-测试不同模型及其组合的定量方法，使用因素分析链接到社会变量；劣势-不考虑主观经验、密度和公众实际上是如何被体验的(理想主义者)或结构过程(它们是如何产生的)；横断面研究；自我选择的考虑:人们如何选择进入某些社区。`
 
 ```
+本研究的优势主要体现在，利用可靠的社会与空间数据和多种定量分析方法，精准地在伦敦量化了复杂的士绅化，并对其未来趋势进行预测，很好地弥补了前文所提到的士绅化研究领域的空缺。同时，优秀的交互式可视化方法及清晰的分析解读，为规划机构制定决策提供了可靠的依据。此外，本文与作者提供的代码也为研究相似主题的学者提供了一条可复制的研究方法。
+
+但是，本文也存在一定的局限性。首先，
+
+重点仅仅是英格兰伦敦的士绅化，这可能并不代表其他城市或地区的士绅化。此外，该研究可能没有考虑到士绅化所涉及的所有空间和社会过程，因为它主要依赖于与人口、房价和建筑环境相关的数据。其他因素，如社会和文化动态，也可能在士绅化中发挥作用，在分析中可能无法完全捕捉到。另一个局限性是，该研究将士绅化作为邻里变化的过程，可能没有充分考虑士绅化对城市和社区的更广泛影响。士绅化往往与种族、阶级和排斥等问题有关，社会经济地位较低的居民被从士绅化社区中驱逐出来，可能会对这些个人和社区产生负面影响。作者确实认识到士绅化的争议性及其可能产生的潜在负面影响，但他们在分析中并没有充分探讨这些问题。可以进行进一步的研究，以更全面地了解士绅化的社会和文化层面及其对城市和社区的更广泛影响。
+
 
 ```
 
